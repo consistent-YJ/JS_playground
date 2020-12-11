@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <div id="change">abcd</div>
+        <button onclick="ChangeColor()">ChangeColor</button>
+        <script>
+            function ChangeColor (){
+                const str=document.getElementById("change");
+                const random_color="#"+Math.round(Math.round(Math.random()*0xffffff)).toString(16);
+                str.style.color=random_color;
+            }
+        </script>
+
+    </body>
+</html>
